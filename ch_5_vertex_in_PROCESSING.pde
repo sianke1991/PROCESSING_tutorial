@@ -40,7 +40,9 @@
 //  3. PImage: 이미지를 저장하는 자료형
       PImage sampleImage;
       sampleImage = loadImage("sample01.jpg"); //이미지 파일은 해당 스케치 파일과 같은 디렉토리의 data 폴더 안에 위치하면 된다.
+                                               //파일명은 확장자까지 입력해야 한다.
       if (sampleImage!=null)
-        image(sampleImage, (width-sampleImage.width/3.0)/2, (height-sampleImage.height/3.0)/3*2, sampleImage.width/3.0, sampleImage.height/3.0); //이미지 파일을 화면에 출력한다. 파일명은 확장자까지 입력해야 한다.
-                                                                                                                                                 //이미지 파일, 시작 위치를 입력한다. 옵션으로 가로 길이, 세로 길이를 추가로 입력할 수 있다.
+        image(sampleImage, (width-sampleImage.width/3.0)/2, (height-sampleImage.height/3.0)/3*2, sampleImage.width/3.0, sampleImage.height/3.0); //이미지 파일을 화면에 출력한다.
+                                                                                                                                                 //이미지 파일, 시작 위치를 입력한다.
+                                                                                                                                                 //옵션으로 가로 길이, 세로 길이를 추가로 입력할 수 있다.
       //읽어온 이미지 파일의 가로, 세로 길이는 .width 및 .height로 조회할 수 있다.
