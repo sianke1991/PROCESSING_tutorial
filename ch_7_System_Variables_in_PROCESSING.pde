@@ -1,20 +1,19 @@
 //7부: System Variables in PROCESSING
 //  PROCESSING에서 자체적으로 제공하여 [코드를 작성하는 사람이 별도로 선언하지 않더라도]
 //  사용 가능한 변수들이 있다.
-//  1. width, height
-//    기본적으로 size 함수는 리터럴 정수 인자를 사용해야 하며, 변수 인자를 사용할 수 없다.
-//    대신 일단 size 함수를 사용했다면 해당 인자 값을 width와 height라는 변수가 담게 된다.
-      void setup() {
-        size(500, 500); //size 함수의 인자는 리터럴 정수이어야 한다. (변수가 들어갈 수 없다.)
-        
-      }
       void draw() {
         //doStuff0(); //width, height 예제
         //doStuff1(); //mouseX, mouseY 예제
         //doStuff2(); //pmouseX, pmouseY 예제
         //doStuff3(); //key 예제
         //doStuff4(); //frameRate 예제
-        doStuff5(); //frameCount 예제
+        //doStuff5(); //frameCount 예제
+      }
+//  1. width, height
+//    기본적으로 size 함수는 리터럴 정수 인자를 사용해야 하며, 변수 인자를 사용할 수 없다.
+//    대신 일단 size 함수를 사용했다면 해당 인자 값을 width와 height라는 변수가 담게 된다.
+      void setup() {
+        size(500, 500); //size 함수의 인자는 리터럴 정수이어야 한다. (변수가 들어갈 수 없다.)
       }
       void doStuff0() {
         background(191);
