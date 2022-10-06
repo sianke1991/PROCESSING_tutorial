@@ -4,6 +4,7 @@
         background(191);
         doStuff0(); //createFont 예제
         doStuff1(); //loadFont 예제
+//      doStuff2(); //변수 출력 예제
       }
 //  1. 스케치 에디터에서 한글을 사용할 수 없다면...
 //    Processing 탭 -> Preferences -> 
@@ -43,6 +44,16 @@
         text("올해 한글날", width/2.0, height/4.0*3.0);
       }
 //      Note. 이 방식은 각 글자를 그림 파일로 만든 뒤 출력하는 것이므로 크기가 큰 문자를 출력하는 경우 결과가 희미하게 나온다.
-
+//  6. 변수 출력
+      void doStuff2() {
+        int liVal = 24;
+        textFont(createFont("SansSerif.plain", 24));
+        textSize(24);
+        fill(0);
+        textAlign(CENTER); //text 함수에서 지정한 위치를 중심으로 문자가 출력된다.
+        text("remaining: " + str(liVal+1), width/2.0, height/2.0);
+        //정수값 liVal+1을 문자열로 변환한 뒤 (str 함수를 통해)
+        //문자열 "remaining: "과 더한 뒤 이를 출력한다.
+      }
       
       
