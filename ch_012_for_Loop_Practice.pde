@@ -76,5 +76,5 @@
           fill(map(i, 0, 199, 0, 359), 100, 100);
           rect(map(i, 0, 200, 0, width), height/3.0, width/200.0, height/6.0);
         }
-        colorMode(RGB, 256, 256, 256, 256); //colorMode를 디폴트로 복구시킨다.
+        colorMode(RGB, 255, 255, 255, 255); //colorMode를 디폴트로 복구시킨다.
       }
