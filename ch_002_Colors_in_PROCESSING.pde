@@ -38,7 +38,7 @@
       stroke(240, 100, 100); //청색 선
       stroke(300, 100, 100); //자주색(Magenta) 선
 //    Note. CMYK 방식은 기본적으로 제공되지 않는다. 별도의 라이브러리를 설치해야 한다.
-      colorMode(RGB); //컬러모드 디폴트로 복구
+      colorMode(RGB, 255, 255, 255); //컬러모드 디폴트로 복구
       noStroke();
 //  6. blendMode: 두 색이 겹칠 때 방식을 설정할 수 있다.
       blendMode(ADD); //겹쳐지는 부분이 밝아짐
